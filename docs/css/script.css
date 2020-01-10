@@ -4,6 +4,7 @@ html{
 
 body{ 
 	background-repeat: no-repeat;
+	background-position: top;
 	background-image: url(../img/orig.svg);
 	background-color: rgba(34,34,34,1.0);
 }
