@@ -8,7 +8,7 @@
 /* ****************************************************** */
 var moduleApp = angular.module('moduleApp', ['ngAnimate', 'ui.router']);
 
-moduleApp.run(["$state",function($state){$state.go('index');}]);
+moduleApp.run(["$state",function($state){$state.go('home');}]);
 
 const configDB = {
     apiKey: "AIzaSyADRVdQRNRWki9gnY1PfJocjij0gazHzWs",
