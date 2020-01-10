@@ -1,0 +1,25 @@
+{
+  "name": "Paula's Squad",
+  "version": "1.0.0",
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/CloseBRF/paulassquad",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "docs/lib"
+  ],
+  "dependencies": {
+    "font-awesome": "latest",
+    "angular-ui-router": "latest",
+    "angular": "latest",
+    "bootstrap": "latest",
+    "jquery": "latest",
+    "angular-animate": "^1.6.6",
+    "angular-translate": "^2.17.0",
+    "lightgallery.js": "latest",
+    "owl.carousel": "^2.3.4"
+  }
+}

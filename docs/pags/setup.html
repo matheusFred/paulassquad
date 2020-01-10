@@ -1,0 +1,43 @@
+<div class="col-md-12 col-sm-12 col-xs-12 pagebox">
+	<div class="row">
+		<div class="col-md-12">
+			<form class="row">
+				<div  class="col-md-6">
+					<div class="form-group col-sm-12">
+						<label for="name-area">Name</label>
+						<input type="text" class="form-control" id="name-area" placeholder="Nickname." ng-model="value.name">
+					</div>					
+
+					<div class="form-group col-sm-12">
+						<label for="email-area">Email</label>
+						<input type="email" class="form-control" id="email-area" placeholder="name@example.com" ng-model="value.email">
+					</div>
+
+					<div class="form-group col-sm-12">
+						<label for="desc-area">Description</label>
+						<textarea type="text" class="form-control" id="text-area" rows="3" ng-model="value.description"></textarea>
+					</div>
+				</div>
+				<div  class="col-md-6">
+					<div class="form-group col-sm-12">
+						<label for="adress-area">Address</label>
+						<input type="text" class="form-control" id="adress-area" placeholder="000, Street - Comp." ng-model="value.address">
+					</div>
+
+					<div class="form-group col-sm-12">
+						<label for="date-area">Date</label>
+						<input type="date" class="form-control" id="date-area"  ng-model="value.date">
+					</div>
+
+					<div class="form-group col-sm-12">
+						<label for="phone-area">Phone</label>
+						<input type="number" class="form-control" id="phone-area" placeholder="+XX(XXX)XXXX-XXXX" ng-model="value.phone">
+					</div>
+					<div class="col-md-12">
+						<button class="btn btn-custom btn-primary btn-lg" type="submit" ng-init="value.type = 'newuser'" ng-click="createAppoiment(value);">Submit</button>
+					</div>  				
+				</div>											  									 						
+			</form>												
+		</div>
+	</div>	
+</div>				

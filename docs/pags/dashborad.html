@@ -1,0 +1,22 @@
+<div class="col-md-12 col-sm-12 col-xs-12 pagebox">
+    <div class="row">
+        <div class="col-md-4">
+            <a class="btn btn-dark btn-lg" ui-sref="dashboard.galeria">Dashboard Galeria</a>
+        </div>
+
+        <div class="col-md-4">
+            <a class="btn btn-dark btn-lg" ui-sref="dashboard.contato">Dashboard Depoimentos</a>
+        </div>	
+
+        <div class="col-md-12" ng-repeat="list in lists">
+            <p>{{list.address}}</p>
+            <p>{{list.descripition}}</p>
+            <p>{{list.email}}</p>
+            <p>{{list.name}}</p>
+            <p>{{list.phone}}</p>
+            <p>{{list.start}}</p>
+        </div>		
+    
+        <div class="transition col-md-8" ui-view></div>
+    </div>  
+</div>   

@@ -1,0 +1,11 @@
+db.newcontact
+	address
+	name
+	start (timestamp)
+	type 
+		- newuser
+		- newwork
+		- newsocio
+	desc
+	email
+	phone
