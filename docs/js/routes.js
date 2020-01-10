@@ -11,34 +11,34 @@ moduleApp.config(function($stateProvider) {
   $stateProvider
     .state('home', {
       url: "",
-      templateUrl: '../pags/aboutus.html'
+      templateUrl: 'pags/aboutus.html'
     }) 
     .state('setup', {
       url: "/setup",
-      templateUrl: '../pags/setup.html'
+      templateUrl: 'pags/setup.html'
     })     
     .state('franchise', {
       url: "/franchise",
-      templateUrl: '../pags/franquia.html'
+      templateUrl: 'pags/franquia.html'
     })     
     .state('funcionario', {
       url: "/funcionario",
-      templateUrl: '../pags/funcionario.html'
+      templateUrl: 'pags/funcionario.html'
     }) 
     .state('faq', {
       url: "/faq",
-      templateUrl: '../pags/faq.html'
+      templateUrl: 'pags/faq.html'
     })     
     
      
     .state('admin', {
       url: "/admin",
-      templateUrl: '../pags/admin.html',
+      templateUrl: 'pags/admin.html',
       controller: 'adminCtrl'
     })  
     .state('dashboard', {
       url: "admin/cms",
-      templateUrl: '/dashboard.html',
+      templateUrl: 'pags/dashboard.html',
       controller: 'dashboardCtrl',
       params: {
         obj: null
