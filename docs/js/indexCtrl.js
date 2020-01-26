@@ -6,8 +6,7 @@
 /* Desenvolvido por Matheus Ferreira <maathe.f@gmail.com>
 /*
 /* ****************************************************** */
-moduleApp.controller('indexCtrl', function($scope, $location, $http){
-	var newValue;
+moduleApp.controller('indexCtrl', function($scope, $state){
 	$scope.statusmenu = 'home';	
 
 	$scope.changeStatus = function(newValue){
@@ -15,21 +14,26 @@ moduleApp.controller('indexCtrl', function($scope, $location, $http){
 	};
 
 	$scope.createAppoiment = function(value){
-		firestore.collection('newcontact').add({
-		  address: value.address,
-		  descripition: value.description,
-		  email: value.email,
-		  name: value.name,
-		  phone: value.phone,
-		  start: value.date,
-		  type: value.type
-		});
-		
+		if(value.type == "newsocio"){
+			firestore.collection('newcontact').add({
+				email: value.email,
+				name: value.name,
+				phone: value.phone,
+				type: value.type
+			});
+		} else {
+			firestore.collection('newcontact').add({
+			address: value.address,
+			descripition: value.description,
+			email: value.email,
+			name: value.name,
+			phone: value.phone,
+			start: value.date,
+			type: value.type
+			});
+		}
 
-		// var div = document.getElementById("sucess_msg");
-		// div.classList.add("sucess_msg");
-
-		// window.setTimeout(function() {div.classList.remove("sucess_msg");}, 3000);
+		$state.go('sucess');
 	};	
 	
 });  

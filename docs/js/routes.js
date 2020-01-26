@@ -30,7 +30,11 @@ moduleApp.config(function($stateProvider) {
       templateUrl: 'pags/faq.html'
     })     
     
-     
+    .state('sucess', {
+      url: "/sucess",
+      templateUrl: 'pags/sucess.html'
+    })  
+    
     .state('admin', {
       url: "/admin",
       templateUrl: 'pags/admin.html',
