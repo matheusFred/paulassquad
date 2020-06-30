@@ -31,23 +31,22 @@
 							<nav class="container-fluid">
 								<img class="logo mx-auto d-block" src="img/logo.png" alt="logomarca">
 								<ul class="mt-2">
-									<li class="col-md-4 hiden_mobile menu-item"></li>
-									<li class="col-md-1 text-center menu-item" ui-sref="home" 
+									<li class="offset-lg-2 col-lg-2 col-md-3 col-sm-12 text-center menu-item" ui-sref="home" 
 										ng-class="{selected: statusmenu === 'home'}" 
 										ng-click="changeStatus('home');">
 										<h5>About us</h5>
 									</li>									
-									<li class="col-md-1 text-center menu-item" ui-sref="setup" 
+									<li class="col-lg-2 col-md-3 col-sm-12 text-center menu-item" ui-sref="setup" 
 										ng-class="{selected: statusmenu === 'setup'}" 
 										ng-click="changeStatus('setup');">
 										<h5>Set up</h5>
 									</li>
-									<li class="col-md-1 text-center menu-item" ui-sref="franchise" 
+									<li class="col-lg-2 col-md-3 col-sm-12 text-center menu-item" ui-sref="franchise" 
 										ng-class="{selected: statusmenu === 'franchise'}"
 										ng-click="changeStatus('franchise');callCarouselHome();">
 										<h5>Franchise</h5>
 									</li>									
-									<li class="col-md-1 text-center menu-item" ui-sref="funcionario" 
+									<li class="col-lg-2 col-md-3 col-sm-12 text-center menu-item" ui-sref="funcionario" 
 										ng-class="{selected: statusmenu === 'funcionario'}" 
 										ng-click="changeStatus('funcionario');">
 										<h5>Carrier</h5>
@@ -63,6 +62,7 @@
 					
 				</div>
 				<div class="footer col-md-12"></div>
+
 				<!-- SCRIPT LIBS -->
 				<script src="lib/angular/angular.min.js"></script>
 				<script src="lib/jquery/dist/jquery.min.js"></script>
